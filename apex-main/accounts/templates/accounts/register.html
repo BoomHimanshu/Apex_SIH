@@ -1,0 +1,331 @@
+{% extends 'accounts/generic.html' %}
+{% load static %}
+
+{% block content %}
+    <form action="register" method="POST">
+        {% csrf_token %}
+        <h1 style="text-align: center; font-family:'Courier New', Courier, monospace">
+            GRAPHICAL PASSWORD AUTHENTICATION</h1>
+
+        <img src=" {% static 'images/apex.png' %}"
+             style="width: 20%;height: 5%;display: block;margin: auto;margin-bottom: 3%;">
+
+
+        <div class="d-flex justify-content-center">
+            <input type="text" class="form-control"
+                   placeholder="USER ID" name="username"
+                   style="width: 35%;">
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <input type="email" class="form-control"
+                   placeholder="EMAIL ID" name="email"
+                   style="width: 35%;">
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <input type="password" class="form-control"
+                   placeholder="PASSWORD" name="password"
+                   style="width: 35%;">
+        </div>
+
+        <br>
+        <h3 style="text-align: center; color: white; font-family:'Courier New', Courier, monospace">
+            PassCon:</h3>
+        <div class="card-deck" style="margin: auto; margin-top: 4%;">
+            <div class="card"
+                 style="border: 1px solid black; background: transparent; margin-left: 3%;margin-right: 3%;">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/anonymity.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/bitcoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/block_chain.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/centralized.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/conversion.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+
+                        <div class="col">
+                            <img src="{% static 'images/currency_cap.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/decentralized.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/decryption.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/dogecoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/emercoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/encryption.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/ethereum.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/feathercoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/free.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/ledger.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/litecoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/lost_key.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/mastercoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/miner.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/miner2.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/mining.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/mining2.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/mining_center.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/mining_pool.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/mining_pool2.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="card"
+                 style="border: 1px solid black; background: transparent; margin-left: 3%;margin-right: 3%;">
+                <div class="container">
+                    <div class="row ">
+
+                        <div class="col">
+                            <img src="{% static 'images/monero.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/myriad.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/namecoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/no_double_spending.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/nxt.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+
+                        <div class="col">
+                            <img src="{% static 'images/p2p.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/peercoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/ponzi_scheme.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/primecoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/pseudonimity.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/pyramid_scheme.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/receive.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/ripple.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/send.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/siacoin.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/stellar_lumen.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/transaction.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/tumbler.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/wallet.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/zcash.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <img src="{% static 'images/zcoin.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/p2p.png' %}" width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/ethereum.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/decryption.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/mining_pool2.png' %}"
+                                 width=70
+                                 style="display: block; margin: auto;padding: 5%">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-secondary btn-lg"
+                style="margin: auto;margin-top:6%;display: block; margin-bottom: 10%;">
+            SUBMIT
+        </button>
+    </form>
+
+    <div>
+        {% for message in messages %}
+            <h3>
+                {{ message }}
+            </h3>
+        {% endfor %}
+    </div>
+{% endblock %}
